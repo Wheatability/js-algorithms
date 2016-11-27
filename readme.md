@@ -65,7 +65,7 @@ function palindrome(str) {
   // Create a reversed string
   var reverse = str.split('').reverse().join('');
   // If the reverse of our string = original str, it is a palindrome.
-  if(str === reverse) {
+  if (str === reverse) {
     return true;
   } else {
     return false;
