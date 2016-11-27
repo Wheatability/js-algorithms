@@ -3,7 +3,7 @@
 ##### As I learn algorithms, I will update this list with each algorithm!
 ------
 ###Reverse A String
-_Using Built in Functions:_
+_Using built-in functions:_
 ```Javascript
 function reverseString(str) {
   // 1. Split string into an array of characters
