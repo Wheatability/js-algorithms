@@ -80,7 +80,7 @@ function palindrome(str) {
   str = str.toLowerCase().replace(/[\W_]/g, '');
   // Loop through the string until the half way point
   for(var i = 0; i < str.length / 2; i++) {
-    // Check the corresponding letters on the opposite side of the string (-1 for index).
+    // Check the corresponding letters on the opposite side of the string.
     if(str[i] !== str[str.length - i - 1]) {
       return false;
     }
