@@ -49,7 +49,7 @@ function factorialize(num) {
     return 1;
   }
   // The factorialize method is called recursively with n - 1 as a parameter.
-  // Each time it runs, it evaluates the function on the right of the return statement before returning.
+  // Each time it runs, it evaluates the function on the right of the return statement before multiplying.
   // Once num === 0, factorialize(0) returns 1. This starts the multiplication up the chain of returns.
   return num * factorialize(num - 1);
 }
