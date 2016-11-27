@@ -54,6 +54,7 @@ function factorialize(num) {
   return num * factorialize(num - 1);
 }
 ```
+------
 ###Check for Palindromes
 _Using built-in methods:_
 ```Javascript
@@ -70,5 +71,20 @@ function palindrome(str) {
   } else {
     return false;
   }
+}
+```
+_Using a for loop:_
+```Javascript
+function palindrome(str) {
+  // Make the string lowercase and remove any non-alphanumeric characters.
+  str = str.toLowerCase().replace(/[\W_]/g, '');
+  // Loop through the string until the half way point
+  // Check the corresponding letters on the opposite side of the string (-1 for index).
+  for(var i = 0; i < str.length / 2; i++) {
+    if(str[i] !== str[str.length - i - 1]) {
+      return false;
+    }
+  }
+  return true;
 }
 ```
