@@ -162,3 +162,23 @@ function confirmEnding(str, target) {
   return str.slice(-target.length) === target;
 }
 ```
+------
+###Repeat a String
+_Using a for loop:_
+```Javascript
+function repeatStringNumTimes(str, num) {
+  newStr = '';
+  if(num > 0) {
+    for (var i = 0; i < num; i++) {
+      newStr += str;
+    }
+  }
+  return newStr;
+}
+```
+_Using built-in methods:_
+```Javascript
+function repeatStringNumTimes(str, num) {
+  return num > 0 ? str.repeat(num) : '';
+}
+```
