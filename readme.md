@@ -135,3 +135,22 @@ function titleCase(str) {
   }).join(' ');
 }
 ```
+------
+###Return Largest Numbers in Arrays
+_Using Array.prototype.reduce():_
+```Javascript
+function returnLargestNumber(arr) {
+  // reduce each inner array to a single value with Math.max()
+  return arr.reduce(function (a, b) {
+    return a.concat(Math.max.apply(Math, b));
+  }, []);
+}
+```
+_Using ES6 Features_
+```Javascript
+function returnLargestNumber(arr) {
+  return arr.reduce((a, b) => {
+    return a.concat(Math.max(...b));
+  }, []);
+}
+```
