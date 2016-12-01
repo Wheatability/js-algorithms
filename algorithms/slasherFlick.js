@@ -1,18 +1,11 @@
-// using built-in functions
+// using Array.prototype.splice()
 function slasher(arr, howMany) {
-  // make a copy of original array
-  var arrCopy = arr.slice();
-  arrCopy.splice(0, howMany);
-  return arrCopy;
+  arr.splice(0, howMany);
+  return arr;
 }
 
-// using a for loop (much less efficient)
+// using Array.prototype.slice()
 function slasher(arr, howMany) {
-  // make a copy of original array
-  var arrCopy = arr.slice();
-  // loop through howMany times, and shift the array.
-  for(var i = 0; i < howMany; i++) {
-    arrCopy.shift();
-  }
-  return arrCopy;
+  return arr.slice(howMany);
 }
+

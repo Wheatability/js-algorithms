@@ -220,24 +220,16 @@ function chunkArrayInGroups(arr, size) {
 ```
 ------
 ###Slasher Flick (removing elements from beginning of an array)
-_Using built-in functions:_
+_Using Array.prototype.splice():_
 ```Javascript
 function slasher(arr, howMany) {
-  // make a copy of original array
-  var arrCopy = arr.slice();
-  arrCopy.splice(0, howMany);
-  return arrCopy;
+  arr.splice(0, howMany);
+  return arr;
 }
 ```
-_Using a for loop (much less efficient):_
+_Using Array.prototype.slice():_
 ```Javascript
 function slasher(arr, howMany) {
-  // make a copy of original array
-  var arrCopy = arr.slice();
-  // loop through howMany times, and shift the array.
-  for(var i = 0; i < howMany; i++) {
-    arrCopy.shift();
-  }
-  return arrCopy;
+  return arr.slice(howMany);
 }
 ```
