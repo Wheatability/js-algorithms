@@ -377,6 +377,28 @@ function convertToRoman(num) {
   return romanized;
 }
 ```
+------
+###Wherefor Art Thou
+_Using Object.Keys and Object.prototype.hasOwnProperty():_
+```Javascript
+/* Check if an array of objects contains matching properties from a source object */
+function whatIsInAName(collection, source) {
+  var arr = [];
 
+  collection.forEach((obj) => {
+    let containsAll = true;
+    Object.keys(source).forEach((key)=>{
+      if(!(obj.hasOwnProperty(key) && obj[key] === source[key])){
+        containsAll = false;
+      }
+    });
+    if(containsAll) {
+      arr.push(obj);
+    }
+  });
+
+  return arr;
+}
+```
 
 
