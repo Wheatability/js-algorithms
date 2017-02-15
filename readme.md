@@ -329,5 +329,33 @@ function sumAll(arr) {
   return total;
 }
 ```
-
+------
+###Diff Two Arrays
+_Using Two Loops:_
+```Javascript
+function diffArray(arr1, arr2) {
+  let newArr = [];
+  for(var num of arr1) {
+    if (arr2.indexOf(num) === -1) {
+      newArr.push(num);
+    } 
+  }
+  for(var num of arr2) {
+    if(arr1.indexOf(num) === -1) {
+      newArr.push(num);
+    }
+  }
+  return newArr;
+}
+```
+_Using Array Methods:_
+```Javascript
+function difArray(arr1, arr2) {
+  return arr1
+    .concat(arr2)
+    .filter(
+      number => !arr1.includes(number) || !arr2.includes(number)
+    );
+}
+```
 
