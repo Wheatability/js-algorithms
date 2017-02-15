@@ -313,3 +313,21 @@ function rot13(str) {
 }
 
 ```
+------
+###Sum of Numbers in Range
+```Javascript
+/* Return the sum of values between a range of numbers. The lowest is not always first. */
+function sumAll(arr) {
+  // assign min and max values from input array
+  let max = Math.max(...arr);
+  let min = Math.min(...arr);
+  let total = 0;
+  // loop over and sum every number between min and max (inclusive)
+  for (var i = min; i <= max; i++) {
+    total += i;
+  }
+  return total;
+}
+```
+
+
