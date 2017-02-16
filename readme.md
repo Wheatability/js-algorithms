@@ -436,5 +436,24 @@ function translatePigLatin(str) {
   return str.split('').concat(ending).slice(startingCons.length).join('');
 }
 ```
+------
+###DNA Pairing
+_Using Array.prototype.forEach():_
+```Javascript
+function pairElement(str) {
+  let genes = str.split('');
+  let possiblePairs = {
+    'A': 'T',
+    'T': 'A', 
+    'C': 'G',
+    'G': 'C'
+  }
+  let genePairs = [];
+  genes.forEach((gene) => {
+    genePairs.push([gene, possiblePairs[gene]]);
+  });
+  return genePairs;
+}
+```
 
 
