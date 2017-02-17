@@ -492,4 +492,13 @@ function uniteUnique(...arr) {
   return mergedArray;
 }
 ```
+------
+###Convert to Spinal Case
+_Using a Regular Expression:_
+```Javascript
+function spinalCase(str) {
+  // split using regular expression that matches whitespace, underscores, or trailing Capitalization
+  return str.split(/\s|_|(?=[A-Z])/g).join('-').toLowerCase();
+}
+```
 
