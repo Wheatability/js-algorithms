@@ -1,16 +1,15 @@
 function sumFibs(num) {
-  var fibNums = [];
-  var a = 0;
-  var b = 1;
-  // Generate Fibs
-
-  return fibNums.filter((val) => {
-    console.log(val, 'val1');
-    return (val % 2 !== 0);
-  }).reduce((acc, val) => {
-    console.log(val, 'val2');
-    return acc + val;
-  }, 0);
+  let prevNum = 0;
+  let currentNum = 1;
+  let result = 0;
+  while(currentNum <= num) {
+    if(currentNum % 2 !== 0){
+      result += currentNum;
+    }
+    currentNum = currentNum + prevNum;
+    prevNum = currentNum - prevNum;
+  }
+  return result;
 }
 
 console.log(sumFibs(10));
