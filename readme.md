@@ -594,3 +594,14 @@ function steamrollArray(arr) {
   return flattenedArray;
 }
 ```
+------
+###Binary Agents
+_Using Array Methods:_
+```Javascript
+function binaryAgent(str) {
+  return str.split(' ').map((char) => {
+    return String.fromCharCode(parseInt(char, 2));
+  }).join('');
+}
+```
+
