@@ -563,10 +563,7 @@ function smallestCommons(arr) {
   }
 }
 ```
-------
-###Finders Keepers
-_Using Array.prototype.forEach:_
-```Javascript
+
 function findElement(arr, func) {
   let foundNum = undefined;
   arr.forEach((val) => {
@@ -575,5 +572,25 @@ function findElement(arr, func) {
     }
   });
   return foundNum;
+}
+```
+------
+###Steamroller
+_Using Recursion:_
+```Javascript
+function steamrollArray(arr) {
+  var flattenedArray = [];
+  // set up recursive function for flattening inner-arrays
+  flatten = (innerArg) => {
+    if(!Array.isArray(innerArg)){
+      flattenedArray.push(innerArg);
+    } else {
+      for(var a in innerArg) {
+        flatten(innerArg[a]);
+      }
+    }
+  };
+  arr.forEach(flatten);
+  return flattenedArray;
 }
 ```
