@@ -563,3 +563,17 @@ function smallestCommons(arr) {
   }
 }
 ```
+------
+###Finders Keepers
+_Using Array.prototype.forEach:_
+```Javascript
+function findElement(arr, func) {
+  let foundNum = undefined;
+  arr.forEach((val) => {
+    if (func(val) && !foundNum){
+      foundNum = val;
+    }
+  });
+  return foundNum;
+}
+```
