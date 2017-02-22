@@ -604,4 +604,16 @@ function binaryAgent(str) {
   }).join('');
 }
 ```
-
+------
+###Everything Be True
+_Using ES6:_
+```Javascript
+function truthCheck(collection, pre) {
+  for(let el of collection) {
+    if(!el[pre]) {
+      return false;
+    }
+  } 
+  return true;
+}
+```
