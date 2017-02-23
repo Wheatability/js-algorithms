@@ -637,3 +637,15 @@ function addTogether(arg1, arg2) {
   return undefined;
 }
 ```
+------
+###Validate Telephone Numbers
+_Using RegEx:_
+```Javascript
+function telephoneCheck(str) {
+  let re = new RegExp(/^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/);
+  if (str.match(re)) {
+    return true;
+  } 
+  return false;
+}
+```
