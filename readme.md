@@ -563,17 +563,6 @@ function smallestCommons(arr) {
   }
 }
 ```
-
-function findElement(arr, func) {
-  let foundNum = undefined;
-  arr.forEach((val) => {
-    if (func(val) && !foundNum){
-      foundNum = val;
-    }
-  });
-  return foundNum;
-}
-```
 ------
 ###Steamroller
 _Using Recursion:_
