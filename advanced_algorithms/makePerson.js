@@ -2,20 +2,30 @@ var Person = function(firstAndLast) {
   let nameArr = firstAndLast.split(' ');
   
   this.getFirstName = () => {
-    return fullName[0];
+    return nameArr[0];
   }
 
   this.getLastName = () => {
-    return fullName[1];
+    return nameArr[1];
   }
 
   this.getFullName = () => {
-    return fullName.join(' ');
+    return nameArr.join(' ');
   }
 
-  
+  this.setFirstName = (firs) => {
+    nameArr[0] = first;
+    return nameArr[0];
+  }
 
-  
+  this.setLastName = (last) => {
+    nameArr[1] = last;
+    return nameArr[1];
+  }
+
+  this.setFullName = (firstAndLast) => {
+    nameArr = firstAndLast.split(' ');
+  }
 };
 
 var bob = new Person('Bob Ross');
