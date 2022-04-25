@@ -1,8 +1,8 @@
-#Javascript Algorithms
+# Javascript Algorithms
 ### A Collection of Algorithms in Javascript
 ##### As I learn algorithms, I will update this list with each algorithm!
 ------
-###Reverse A String
+### Reverse A String
 _Using built-in functions:_
 ```Javascript
 function reverseString(str) {
@@ -25,7 +25,7 @@ function reverseString(str) {
 }
 ```
 ------
-###Factorialize A Number
+### Factorialize A Number
 _Using a for loop:_
 ```Javascript
 function factorialize(num) {
@@ -55,7 +55,7 @@ function factorialize(num) {
 }
 ```
 ------
-###Check for Palindromes
+### Check for Palindromes
 _Using built-in methods:_
 ```Javascript
 function palindrome(str) {
@@ -89,7 +89,7 @@ function palindrome(str) {
 }
 ```
 ------
-###Find Longest Word in a String
+### Find Longest Word in a String
 _Using a for loop:_
 ```Javascript
 function findLongestWord(str) {
@@ -107,7 +107,7 @@ function findLongestWord(str) {
 }
 ```
 ------
-###Title Case a String
+### Title Case a String
 _Using a for loop:_
 ```Javascript
 function titleCase(str) {
@@ -136,7 +136,7 @@ function titleCase(str) {
 }
 ```
 ------
-###Return Largest Numbers in Arrays
+### Return Largest Numbers in Arrays
 _Using Array.prototype.reduce():_
 ```Javascript
 function returnLargestNumber(arr) {
@@ -155,7 +155,7 @@ function returnLargestNumber(arr) {
 }
 ```
 ------
-###Confirm a String Ending
+### Confirm a String Ending
 _Using String.prototype.slice():_
 ```Javascript
 function confirmEnding(str, target) {
@@ -163,7 +163,7 @@ function confirmEnding(str, target) {
 }
 ```
 ------
-###Repeat a String
+### Repeat a String
 _Using a for loop:_
 ```Javascript
 function repeatStringNumTimes(str, num) {
@@ -183,7 +183,7 @@ function repeatStringNumTimes(str, num) {
 }
 ```
 ------
-###Truncate a String
+### Truncate a String
 _Using if else logic, and String.slice():_
 ```Javascript
 function truncateString(str, num) {
@@ -207,7 +207,7 @@ function truncateString(str, num) {
 }
 ```
 ------
-###Chunky Monkey (Grouping array elements by n-size)
+### Chunky Monkey (Grouping array elements by n-size)
 _Using a for loop_
 ```Javascript
 function chunkArrayInGroups(arr, size) {
@@ -219,7 +219,7 @@ function chunkArrayInGroups(arr, size) {
 }
 ```
 ------
-###Slasher Flick (removing elements from beginning of an array)
+### Slasher Flick (removing elements from beginning of an array)
 _Using Array.prototype.splice():_
 ```Javascript
 function slasher(arr, howMany) {
@@ -234,7 +234,7 @@ function slasher(arr, howMany) {
 }
 ```
 ------
-###Mutations
+### Mutations
 _Using a for loop_
 ```Javascript
 /* Return true if the string in the first element of the array contains 
@@ -251,7 +251,7 @@ function mutation(arr) {
 }
 ```
 ------
-###Falsy Bouncer
+### Falsy Bouncer
 _Using Array.prototype.filter():_
 ```Javascript
 // Remove all falsy values from an array.
@@ -263,7 +263,7 @@ function bouncer(arr) {
 }
 ```
 ------
-###Seek and Destroy
+### Seek and Destroy
 _By converting extra arguments into an array and filtering arr:_
 ```Javascript
 function destroyer(arr) {
@@ -275,7 +275,7 @@ function destroyer(arr) {
 }
 ```
 ------
-###Where Do I Belong
+### Where Do I Belong
 _Post-insertion:_
 ```Javascript
 /* Return the lowest index at which a value (second argument) should be 
@@ -289,7 +289,7 @@ function getIndexToIns(arr, num) {
 }
 ```
 ------
-###Caesars Cipher
+### Caesars Cipher
 _Using an Array:_
 ```Javascript
 function rot13(str) {
@@ -314,7 +314,7 @@ function rot13(str) {
 
 ```
 ------
-###Sum of Numbers in Range
+### Sum of Numbers in Range
 ```Javascript
 /* Return the sum of values between a range of numbers. The lowest is not always first. */
 function sumAll(arr) {
@@ -330,7 +330,7 @@ function sumAll(arr) {
 }
 ```
 ------
-###Diff Two Arrays
+### Diff Two Arrays
 _Using Two Loops:_
 ```Javascript
 function diffArray(arr1, arr2) {
@@ -359,7 +359,7 @@ function difArray(arr1, arr2) {
 }
 ```
 ------
-###Convert to Roman Numerals
+### Convert to Roman Numerals
 _Using Nested Loops:_
 ```Javascript
 function convertToRoman(num) {
@@ -378,7 +378,7 @@ function convertToRoman(num) {
 }
 ```
 ------
-###Wherefor Art Thou
+### Wherefor Art Thou
 _Using Object.Keys and Object.prototype.hasOwnProperty():_
 ```Javascript
 /* Check if an array of objects contains matching properties from a source object */
@@ -401,7 +401,7 @@ function whatIsInAName(collection, source) {
 }
 ```
 ------
-###Search and Replace
+### Search and Replace
 _While maintaining case:_
 ```Javascript
 function myReplace(str, before, after) {
@@ -417,7 +417,7 @@ function myReplace(str, before, after) {
 }
 ```
 ------
-###Pig Latin
+### Pig Latin
 _Using Array/String methods:_
 ```Javascript
 function translatePigLatin(str) {
@@ -437,7 +437,7 @@ function translatePigLatin(str) {
 }
 ```
 ------
-###DNA Pairing
+### DNA Pairing
 _Using Array.prototype.forEach():_
 ```Javascript
 function pairElement(str) {
@@ -456,7 +456,7 @@ function pairElement(str) {
 }
 ```
 ------
-###Missing Letters in Range
+### Missing Letters in Range
 _Using a For Loop:_
 ```Javascript
 function fearNotLetter(str) {
@@ -475,7 +475,7 @@ function fearNotLetter(str) {
 }
 ```
 ------
-###Pre-sorted Union of Sets
+### Pre-sorted Union of Sets
 _Using Rest Operator and Array Methods:_
 ```Javascript
 /* Maintain original order of numbers in final array with no duplicates */
@@ -493,7 +493,7 @@ function uniteUnique(...arr) {
 }
 ```
 ------
-###Convert to Spinal Case
+### Convert to Spinal Case
 _Using a Regular Expression:_
 ```Javascript
 function spinalCase(str) {
@@ -502,7 +502,7 @@ function spinalCase(str) {
 }
 ```
 ------
-###Sum Odd Fibonacci Numbers
+### Sum Odd Fibonacci Numbers
 _Using a While Loop:_
 ```Javascript
 function sumFibs(num) {
@@ -520,7 +520,7 @@ function sumFibs(num) {
 }
 ```
 ------
-###Sum of Primes
+### Sum of Primes
 _Using Array Methods:_
 ```Javascript
 function sumPrimes(num) {
@@ -539,7 +539,7 @@ function sumPrimes(num) {
 
 ```
 ------
-###Least Common Multiple of Range
+### Least Common Multiple of Range
 _Using Euclidean Algorithm:_
 ```Javascript
 function smallestCommons(arr) {
@@ -564,7 +564,7 @@ function smallestCommons(arr) {
 }
 ```
 ------
-###Steamroller
+### Steamroller
 _Using Recursion:_
 ```Javascript
 function steamrollArray(arr) {
@@ -584,7 +584,7 @@ function steamrollArray(arr) {
 }
 ```
 ------
-###Binary Agents
+### Binary Agents
 _Using Array Methods:_
 ```Javascript
 function binaryAgent(str) {
@@ -594,7 +594,7 @@ function binaryAgent(str) {
 }
 ```
 ------
-###Everything Be True
+### Everything Be True
 _Using ES6:_
 ```Javascript
 function truthCheck(collection, pre) {
@@ -607,7 +607,7 @@ function truthCheck(collection, pre) {
 }
 ```
 ------
-###Arguments Optional
+### Arguments Optional
 _Using a Closure:_
 ```Javascript
 function addTogether(arg1, arg2) {
@@ -627,7 +627,7 @@ function addTogether(arg1, arg2) {
 }
 ```
 ------
-###Validate Telephone Numbers
+### Validate Telephone Numbers
 _Using RegEx:_
 ```Javascript
 function telephoneCheck(str) {
@@ -639,7 +639,7 @@ function telephoneCheck(str) {
 }
 ```
 ------
-###Symmetric Difference of Arrays
+### Symmetric Difference of Arrays
 _Using Array Methods:_
 ```Javascript
 function sym(...args) {
@@ -661,7 +661,7 @@ function sym(...args) {
 }
 ```
 ------
-###Exact Change
+### Exact Change
 _Using Array.prototype.reduce():_
 ```Javascript
   const denom = [
@@ -719,7 +719,7 @@ function checkCashRegister(price, cash, cid) {
 }
 ```
 ------
-###Update Inventory
+### Update Inventory
 _By Changing into Object:_
 ```Javascript
 function updateInventory(arr1, arr2) {
@@ -770,7 +770,7 @@ var newInv = [
 updateInventory(curInv, newInv);
 ```
 ------
-###Permutations with No Repeats
+### Permutations with No Repeats
 _Using Heap's Algorithm:_
 ```Javascript
 function permAlone(str) {
@@ -806,7 +806,7 @@ function getPerms(str) {
 }
 ```
 ------
-###Orbital Period of Sattelite
+### Orbital Period of Sattelite
 _Using Math Class:_
 ```Javascript
 function orbitalPeriod(arr) {
